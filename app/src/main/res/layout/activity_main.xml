@@ -7,6 +7,32 @@
     android:orientation="vertical"
     tools:context="com.esioner.adpadfunctiontest.MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="36dp" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:text="退出"
+            android:textColor="#fff"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,30 +75,20 @@
             android:text="关闭" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:layout_margin="10dp"
+        android:text="2. Home键测试 "
+        android:textSize="20dp" />
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:text="2. Home键测试 "
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/tv_home_result"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:gravity="center"
-            android:text="结果"
-            android:textColor="#0f0"
-            android:textSize="22dp" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_home_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textSize="22dp" />
 
 
     <LinearLayout

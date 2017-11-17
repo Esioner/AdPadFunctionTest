@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnCloseAll = findViewById(R.id.btn_closeAll);
         Button btnStartRayTest = findViewById(R.id.btn_start_test_ray);
         Button btnStopRayTest = findViewById(R.id.btn_stop_test_ray);
+        Button btnExitApp = findViewById(R.id.btn_exit);
         btnOpenRed.setOnClickListener(this);
 //      btnCloseRed.setOnClickListener(this);
         btnOpenGreen.setOnClickListener(this);
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCloseAll.setOnClickListener(this);
         btnStartRayTest.setOnClickListener(this);
         btnStopRayTest.setOnClickListener(this);
+        btnExitApp.setOnClickListener(this);
     }
 
     @Override
@@ -105,6 +107,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_stop_test_ray:
                 stopTestRay();
+                break;
+            case R.id.btn_exit:
+                finish();
                 break;
             default:
         }
