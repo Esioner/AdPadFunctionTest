@@ -9,8 +9,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="20dp"
         android:gravity="center_vertical">
 
         <TextView
@@ -38,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="1. 指示灯的功能测试"
-        android:textSize="20dp" />
+        android:textSize="30dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -80,40 +81,45 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="2. Home键测试 "
-        android:textSize="20dp" />
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/tv_home_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:layout_marginLeft="20dp"
         android:gravity="center"
-        android:textSize="22dp" />
+        android:text="点击开始Home键功能测试"
+        android:textSize="26dp" />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="3. 红外线的功能测试"
+        android:textSize="30dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:text="3. 红外线的功能测试"
-            android:textSize="20dp" />
-
         <Button
             android:id="@+id/btn_start_test_ray"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:text="开始" />
 
         <Button
             android:id="@+id/btn_stop_test_ray"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:text="停止" />
     </LinearLayout>
 
@@ -129,29 +135,17 @@
             android:layout_marginLeft="10dp"
             android:text="红外线目前的状态为:"
             android:textColor="#000"
-            android:textSize="22dp" />
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/tv_ray_status"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center"
             android:text="0"
             android:textColor="#0f0"
             android:textSize="30dp" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
-    <TextView
-        android:id="@+id/tv_show_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
 </LinearLayout>
 
 

@@ -260,7 +260,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return super.onKeyUp(keyCode, event);
     }
-
     @Override
     protected void onStop() {
         closeAll();
